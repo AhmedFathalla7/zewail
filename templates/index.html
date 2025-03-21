@@ -1,0 +1,471 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>Zewail - زويل لفلاتر المياه</title>
+
+    <link rel="shortcut icon" href="{% static 'assets/img/logo.webp' %}" type="image/x-icon">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Bootstrap -->
+    <link href="{% static 'assets/css/bootstrap.css' %}" rel="stylesheet">
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/slick.css' %}"/>
+    <!-- Theme color -->
+    <link id="switcher" href="{% static 'assets/css/theme-color/default-theme.css' %}" rel="stylesheet">
+
+    <!-- Main style sheet -->
+    <link href="{% static 'style.css'%}" rel="stylesheet">
+
+   
+    <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+    
+    
+
+  </head>
+  <body>
+
+  <!--START SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#">
+      <i class="fa fa-angle-up"></i>
+    </a>
+  <!-- END SCROLL TOP BUTTON -->
+
+  <!-- Start header section -->
+  <header id="mu-header">  
+    <nav class="navbar navbar-default mu-main-navbar" role="navigation">  
+      <div class="container">
+        <div class="navbar-header pull-right">
+          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <!-- LOGO -->       
+
+           <!--  Text based logo  -->
+          <a class="navbar-brand" href="index.html">
+            <h1>Zewail</h1>
+            <img src="{% static 'assets/img/logo.webp' %}" alt="Logo img">
+            
+          </a> 
+         
+        </div>
+        <div id="navbar" class="navbar-collapse collapse pull-left">
+          <ul id="top-menu" class="nav navbar-nav navbar-right mu-main-nav">
+            <li><a href="#">الرئيسية <i class="fa-solid fa-house"></i></a></li>
+            <li><a href="#mu-about-us">عنا <i class="fas fa-info-circle"></i></a></li>  
+            <li><a href="#mu-restaurant-menu">المنتجات <i class="fa-solid fa-basket-shopping"></i></a></li>
+            <li><a href="#mu-contact">اتصل بنا <i class="fas fa-phone-alt"></i></a></li> 
+            <li class="search-container">
+              <button id="search-toggle"><i class="fa fa-search"></i></button>
+              <div class="search-box" id="search-box">
+                  <input type="text" id="search-input" placeholder="ابحث عن منتج...">
+              </div>
+            </li>
+          </ul>                            
+        </div><!--/.nav-collapse -->       
+      </div>          
+    </nav> 
+  </header>
+  <!-- End header section -->
+ 
+
+  <!-- Start slider  -->
+  <section id="mu-slider">
+    <div class="mu-slider-area"> 
+
+      <!-- Top slider -->
+      <div class="mu-top-slider">
+
+        <!-- Top slider single slide -->
+        <div class="mu-top-slider-single">
+          <img src="{% static 'assets/img/slider/land1.webp' %}" alt="img">
+          <!-- Top slider content -->
+          <div class="mu-top-slider-content">
+            <span class="mu-slider-small-title">مرحبًا بك</span>
+            <h2 class="mu-slider-title">جودة وابتكار في كل منتج</h2>
+            <p>نقدم مجموعة واسعة من المنتجات عالية الجودة التي تلبي احتياجات عملائنا، بدءًا من المعدات التقنية إلى حلول تنقية المياه وقطع الغيار الأصلية</p>           
+            <a href="#mu-restaurant-menu" class="mu-readmore-btn mu-reservation-btn">استكشف المنتجات</a>
+          </div>
+          <!-- / Top slider content -->
+        </div>
+        <!-- / Top slider single slide -->    
+
+         <!-- Top slider single slide -->
+        <div class="mu-top-slider-single">
+          <img src="{% static 'assets/img/slider/land2.webp' %}" alt="img">
+          <!-- Top slider content -->
+          <div class="mu-top-slider-content">
+            <span class="mu-slider-small-title">جودة وموثوقية</span>
+            <h2 class="mu-slider-title">قطع غيار أصلية بأعلى المعايير</h2>
+            <p>نوفر لك قطع الغيار الأصلية التي تضمن أداءً ممتازًا وعمرًا أطول لمعداتك، مع ضمان الجودة والكفاءة</p>           
+           <a href="#mu-restaurant-menu" class="mu-readmore-btn mu-reservation-btn">استكشف المنتجات</a>
+          </div>
+          <!-- / Top slider content -->
+        </div>
+        <!-- / Top slider single slide --> 
+
+        <!-- Top slider single slide -->
+        <div class="mu-top-slider-single">
+          <img src="{% static 'assets/img/slider/land3.webp' %}" alt="img">
+          <!-- Top slider content -->
+          <div class="mu-top-slider-content">
+            <span class="mu-slider-small-title">نقاء وصحة</span>
+            <h2 class="mu-slider-title">مياه نقية لحياة صحية</h2>
+            <p>نحرص على توفير أنظمة تنقية مياه تضمن لك ولعائلتك شرب مياه نقية وصحية، لأن صحتكم هي أولويتنا</p>           
+            <a href="#mu-restaurant-menu" class="mu-readmore-btn mu-reservation-btn">استكشف المنتجات</a>
+          </div>
+          <!-- / Top slider content -->
+        </div>
+        <!-- / Top slider single slide -->   
+
+      </div>
+    </div>
+  </section>
+  <!-- End slider  -->
+
+  <!-- Start About us -->
+  <section id="mu-about-us">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mu-about-us-area">
+
+            <div class="mu-title">
+              <span class="mu-subtitle">اكتشف</span>
+              <h2>من نحن</h2>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+               <div class="mu-about-us-left">     
+                <img class="img1" src="{% static 'assets/img/about.webp' %}" alt="img" loading="lazy">
+                <img class="img2" src="{% static 'assets/img/about1.webp' %}" alt="img" loading="lazy">
+                </div>
+              </div>
+              <div class="txt col-md-6">
+                 <div class="mu-about-us-right">
+                 <p>نحن في <strong>شركة فلاتر</strong> نسعى لتقديم حلول متطورة في مجال تنقية المياه، مع التركيز على الجودة العالية، التكنولوجيا الحديثة، وخدمة العملاء المتميزة</p>                              
+                 <ul>
+                    <li>منتجات مبتكرة تلبي أعلى معايير الجودة</li>
+                    <li>توفير قطع غيار أصلية لتعزيز كفاءة أنظمة التنقية</li>
+                    <li>تصاميم حديثة لأنظمة تنقية المياه تناسب جميع الاحتياجات</li>                    
+                    <li>دعم فني متواصل لضمان تجربة استخدام سلسة.</li>
+                    <li>الالتزام بالمعايير البيئية للحفاظ على الموارد الطبيعية</li>
+                    <li>تحقيق أعلى مستوى من رضا العملاء من خلال خدمات موثوقة</li>
+                  </ul>
+                  <p>مع خبرتنا الطويلة في المجال، نطمح لأن نكون الخيار الأول لكل من يبحث عن نقاء المياه وجودة الحياة</p>   
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End About us -->
+
+  <!-- Start Counter Section -->
+  <section id="mu-counter">
+    <div class="mu-counter-overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="mu-counter-area">
+
+              <ul class="mu-counter-nav">
+
+                <li class="col-md-3 col-sm-3 col-xs-12">
+                  <div class="mu-single-counter">
+                    <h3><span class="counter-value" data-count="150">0</span><sup>+</sup></h3>
+                    <p>منتج متوفر</p>
+                  </div>
+                </li>
+
+                <li class="col-md-3 col-sm-3 col-xs-12">
+                  <div class="mu-single-counter">
+                    <h3><span class="counter-value" data-count="60">0</span><sup>+</sup></h3>
+                    <p>علامة تجارية</p>
+                  </div>
+                </li>
+
+                 <li class="col-md-3 col-sm-3 col-xs-12">
+                  <div class="mu-single-counter">
+                     <h3><span class="counter-value" data-count="45">0</span><sup>+</sup></h3>
+                    <p>مركز صيانة</p>
+                  </div>
+                </li>
+
+                 <li class="col-md-3 col-sm-3 col-xs-12">
+                  <div class="mu-single-counter">
+                    <h3><span class="counter-value" data-count="6560">0</span><sup>+</sup></h3>
+                    <p>عميل</p>
+                  </div>
+                </li>
+
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Counter Section -->
+
+<!-- Start Restaurant Menu -->
+<section id="mu-restaurant-menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mu-restaurant-menu-area">
+
+                    <div class="mu-title">
+                        <span class="mu-subtitle">اكتشف</span>
+                        <h2>منتجاتنا</h2>
+                    </div>
+
+                    <div class="mu-restaurant-menu-content">
+                        <ul class="nav nav-tabs mu-restaurant-menu">
+                            <li><a href="#parts" data-toggle="tab">قطع الغيار</a></li>
+                            <li><a href="#filters" data-toggle="tab">الفلاتر</a></li>
+                            <li class="active"><a href="#all" data-toggle="tab">كل المنتجات</a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+
+                            <div class="tab-pane fade in active" id="all">
+                                <div class="mu-tab-content-area">
+                                    <div class="row">
+                                        {% for product in all_products %}
+                                            <div class="col-md-4">
+                                                <div class="custom-card">
+                                                    <img src="{{ product.image.url }}" alt="{{ product.name }}" loading="lazy">
+                                                    <div class="custom-card-body">
+                                                        <h5 class="custom-card-title">{{ product.name }}</h5>
+                                                        <p class="custom-category">القسم: {{ product.category.name }}</p>
+                                                        <p class="custom-card-text">{{ product.description }}</p>
+                                                        <span class="custom-price">{{ product.price }} جنيه</span>
+                                                        <a href="https://wa.me/01000528348?text=أريد%20شراء%20{{ product.name }}"
+                                                            target="_blank" class="whatsapp-button">
+                                                            <i class="fab fa-whatsapp"></i> اطلب عبر واتساب
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        {% empty %}
+                                            <p class="text-center">لا توجد منتجات متاحة.</p>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="filters">
+                                <div class="mu-tab-content-area">
+                                    <div class="row">
+                                        {% for product in filters %}
+                                            <div class="col-md-4">
+                                                <div class="custom-card">
+                                                    <img src="{{ product.image.url }}" alt="{{ product.name }}" loading="lazy">
+                                                    <div class="custom-card-body">
+                                                        <h5 class="custom-card-title">{{ product.name }}</h5>
+                                                        <p class="custom-category">القسم: {{ product.category.name }}</p>
+                                                        <p class="custom-card-text">{{ product.description }}</p>
+                                                        <span class="custom-price">{{ product.price }} جنيه</span>
+                                                        <a href="https://wa.me/01000528348?text=أريد%20شراء%20{{ product.name }}"
+                                                            target="_blank" class="whatsapp-button">
+                                                            <i class="fab fa-whatsapp"></i> اطلب عبر واتساب
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        {% empty %}
+                                            <p class="text-center">لا توجد منتجات متاحة في هذه الفئة.</p>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="parts">
+                                <div class="mu-tab-content-area">
+                                    <div class="row">
+                                        {% for product in spare_parts %}
+                                            <div class="col-md-4">
+                                                <div class="custom-card">
+                                                    <img src="{{ product.image.url }}" alt="{{ product.name }}" loading="lazy">
+                                                    <div class="custom-card-body">
+                                                        <h5 class="custom-card-title">{{ product.name }}</h5>
+                                                        <p class="custom-category">القسم: {{ product.category.name }}</p>
+                                                        <p class="custom-card-text">{{ product.description }}</p>
+                                                        <span class="custom-price">{{ product.price }} جنيه</span>
+                                                        <a href="https://wa.me/01000528348?text=أريد%20شراء%20{{ product.name }}"
+                                                            target="_blank" class="whatsapp-button">
+                                                            <i class="fab fa-whatsapp"></i> اطلب عبر واتساب
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        {% empty %}
+                                            <p class="text-center">لا توجد منتجات متاحة في هذه الفئة.</p>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Restaurant Menu -->
+
+  
+ 
+
+  <!-- Start Contact section -->
+  <section id="mu-contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mu-contact-area">
+
+            <div class="mu-title">
+              <span class="mu-subtitle">تواصل معنا</span>
+              <h2>ابقَ على اتصال</h2>
+            </div>
+  
+            <div class="row justify-content-center ">
+              
+              <div class="col-md-5">
+                <div class="contact-card phone-card">
+                  <div class="contact-card-body">
+                    <h4><i class="fas fa-phone-alt"></i> اتصل بنا</h4>
+                    <p>يمكنك التواصل معنا عبر الهاتف لأي استفسارات أو طلبات</p>
+                    <a href="tel:+201000528348" class="contact-button phone-button">
+                      <i class="fas fa-phone"></i> اتصل الآن
+                    </a>
+                  </div>
+                </div>
+              </div>
+  
+              
+              <div class="col-md-5">
+                <div class="contact-card whatsapp-card">
+                  <div class="contact-card-body">
+                    <h4><i class="fab fa-whatsapp"></i> تواصل عبر واتساب</h4>
+                    <p>تواصل معنا بسهولة عبر واتساب لأي استفسارات أو طلبات شراء</p>
+                    <a href="https://wa.me/201000528348" target="_blank" class="contact-button whatsapp-button">
+                      <i class="fab fa-whatsapp"></i>   واتساب
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact section -->
+
+  <!-- Start Map section -->
+  <section id="mu-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13696.361449381919!2d30.677033482049268!3d30.88413305739751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f639007fb2dbd7%3A0x736e2099fe3100bc!2z2KXZitiq2KfZiSDYp9mE2KjYp9ix2YjYr9iMINil2KrZitin2Yog2KfZhNio2KfYsdmI2K_YjCDZhdix2YPYsiDYpdmK2KrYp9mJINin2YTYqNin2LHZiNiv2Iwg2YXYrdin2YHYuNipINin2YTYqNit2YrYsdip!5e0!3m2!1sar!2seg!4v1741699956071!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+  <!-- End Map section -->
+
+  <!-- Start Footer -->
+  <footer id="mu-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+        <div class="mu-footer-area">
+           <div class="mu-footer-social">
+            <a href="https://www.facebook.com/zewilwatergroup?locale=ar_AR"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://wa.me/201000528348" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <div class="mu-footer-copyright">
+            <p>&copy; جميع الحقوق محفوظة لشركة <a rel="nofollow" href="#">زويل</a></p>
+          </div>         
+        </div>
+      </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+  
+  <!-- jQuery library -->
+  <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="{% static 'assets/js/bootstrap.js' %}"></script>
+  <!-- Slick slider -->
+  <script type="text/javascript" src="{% static 'assets/js/slick.js' %}"></script>
+  <!-- Counter -->
+  <script type="text/javascript" src="{% static 'assets/js/simple-animated-counter.js' %}"></script>
+  <!-- Gallery Lightbox -->
+  <script type="text/javascript" src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+  <!-- Date Picker -->
+  <script type="text/javascript" src="{% static 'assets/js/bootstrap-datepicker.js' %}"></script>
+  <!-- Ajax contact form  -->
+  <script type="text/javascript" src="{% static 'assets/js/app.js' %}"></script>
+  
+  <!-- Custom js -->
+  <script src="{% static 'assets/js/custom.js' %}"></script>
+  
+  <!-- search -->
+  <script>
+      document.addEventListener("DOMContentLoaded", function () {
+    const searchToggle = document.getElementById("search-toggle");
+    const searchBox = document.getElementById("search-box");
+    const searchInput = document.getElementById("search-input");
+    const searchButton = document.getElementById("search-button");
+
+    searchToggle.addEventListener("click", function () {
+        searchBox.classList.toggle("active");
+        searchInput.focus();
+    });
+
+    function filterProducts() {
+        const query = searchInput.value.trim().toLowerCase();
+        const allProducts = document.querySelectorAll(".custom-card");
+
+        allProducts.forEach(card => {
+            const productName = card.querySelector(".custom-card-title").textContent.toLowerCase();
+            if (productName.includes(query)) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+        });
+    }
+
+    searchInput.addEventListener("input", filterProducts);
+
+    searchButton.addEventListener("click", filterProducts);
+});
+
+  </script>
+
+ 
+
+  </body>
+</html>
