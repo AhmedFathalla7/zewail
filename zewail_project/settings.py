@@ -74,7 +74,7 @@ WSGI_APPLICATION = 'zewail_project.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
-
+#password=   s5?3CaK9g#^4Q9X
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",

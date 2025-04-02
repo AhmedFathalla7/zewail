@@ -14,7 +14,6 @@
 #FOOTER SECTION
 #RESPONSIVE DESIGN
 */
-@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
 
 :root {
   --primary-color: #f8a11c;
@@ -224,7 +223,7 @@ img {
   color: #333;
   font-weight: 700;
   font-size: 35px;
-  padding-bottom:5px ;
+  padding-bottom: 15px ;
   font-family: 'Slabo 27px', serif !important;
 }
 
