@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-8w!t)+6&sc=337-4il068hxa5@vymcrmq7y=u_%cxxn!*r@c76
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['zewail.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
