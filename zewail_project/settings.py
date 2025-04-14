@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-8w!t)+6&sc=337-4il068hxa5@vymcrmq7y=u_%cxxn!*r@c76
 DEBUG = True
 
 ALLOWED_HOSTS = ['zewail.onrender.com', 'localhost', '127.0.0.1']
-
+# ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'zewail.onrender.com']
 
 # Application definition
 
@@ -87,6 +87,17 @@ WSGI_APPLICATION = 'zewail_project.wsgi.application'
 #         'PORT': os.environ.get('DB_PORT', '5432'),
 #     }
 # }
+
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql",
+#         "NAME": "mydb",
+#         "USER": "django",
+#         "PASSWORD": "12345",
+#         "HOST": "localhost",
+#         "PORT": "5432",
+#     }
+# }
 import dj_database_url
 import os
 
@@ -128,7 +139,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_DIRS = [
