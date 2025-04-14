@@ -77,17 +77,22 @@ WSGI_APPLICATION = 'zewail_project.wsgi.application'
 #password=   s5?3CaK9g#^4Q9X
 
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('DB_NAME'),
-        'USER': os.environ.get('DB_USER'),
-        'PASSWORD': os.environ.get('DB_PASSWORD'),
-        'HOST': os.environ.get('DB_HOST'),
-        'PORT': os.environ.get('DB_PORT', '5432'),
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': os.environ.get('DB_NAME','mydb'),
+#         'USER': os.environ.get('DB_USER','mydb_r1i7_user'),
+#         'PASSWORD': os.environ.get('DB_PASSWORD','Ah3AxqjDCQJB5fVqGMJFeNNxFSRi1Uf8'),
+#         'HOST': os.environ.get('DB_HOST','dpg-cvu47915pdvs73e4i2vg-a.onrender.com'),
+#         'PORT': os.environ.get('DB_PORT', '5432'),
+#     }
+# }
+import dj_database_url
+import os
 
+DATABASES = {
+    'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
