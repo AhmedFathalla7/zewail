@@ -18,19 +18,5 @@ def main():
     execute_from_command_line(sys.argv)
 
 
-import os
-import django
-
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "zewail_project.settings")
-django.setup()
-
-from django.contrib.auth.models import User
-
-if not User.objects.filter(username="admin").exists():
-    User.objects.create_superuser("admin", "admin@example.com", "zewail123456789")
-    print("✅ Superuser created!")
-else:
-    print("⚠️ Superuser already exists.")
-
 if __name__ == '__main__':
     main()
